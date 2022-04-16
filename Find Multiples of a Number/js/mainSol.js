@@ -1,3 +1,4 @@
+
 /* 
 In this simple exercise, you will build a program that takes a value, integer , 
 and returns a list of its multiples up to another value, limit . If limit is a multiple of integer, 
@@ -8,3 +9,12 @@ For example, if the parameters passed are (2, 6), the function should return [2,
 
 If you can, try writing it in only one line of code.
 */
+
+function findMultiples(int,limit){
+  let result = []
+  
+  for (let i = int; i<=limit ; i+=int)
+    result.push(i)
+    
+  return result
+}
