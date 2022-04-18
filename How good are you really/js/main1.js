@@ -15,3 +15,16 @@ Your points are not included in the array of your class's points.
 For calculating the average point you may add your point to the given array!
 
 */
+
+function classAvg(myScore, classArr){
+    classArr.push(myScore);
+
+    let total = classArr.reduce((accul, curr) => {
+        accul = accul + curr
+        return accul;
+    })
+    console.log(total / classArr.length)
+    return myScore > (total / classArr.length) ? true : false
+}
+
+console.log(classAvg(86, [77,85,59,90,85,63]))
