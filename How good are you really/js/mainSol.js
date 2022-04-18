@@ -16,15 +16,18 @@ For calculating the average point you may add your point to the given array!
 
 */
 
-function classAvg(myScore, classArr){
-    classArr.push(myScore);
-
-    let total = classArr.reduce((accul, curr) => {
-        accul = accul + curr
-        return accul;
+function betterThanAverage(classPoints, yourPoints) {
+    // Your code here
+    classPoints.push(yourPoints)
+    
+    let sum = 0;
+    let result;
+    classPoints.forEach(n => {
+      sum += n;
     })
-    console.log(total / classArr.length)
-    return myScore > (total / classArr.length) ? true : false
-}
-
-console.log(classAvg(86, [77,85,59,90,85,63]))
+    sum = sum / classPoints.length;
+    
+    yourPoints > sum ? result = true : result = false;
+    return result;
+  }
+  
