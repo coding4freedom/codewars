@@ -18,3 +18,9 @@ function swap(str){
   }
   
   console.log(swap('Tony Robinson'))
+
+  /* Cleaner way to do this  */
+
+  function nameSuffle(str){
+    return str.split(' ').reverse().join(' ')
+  }
