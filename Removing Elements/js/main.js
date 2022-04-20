@@ -22,14 +22,3 @@ function everyOtherElement(arr){
 
 console.log(everyOtherElement(phrase))
 
-function swap(str){
-  let wordSwap = str.split(' ');
-  let last = wordSwap[1];
-  let first = wordSwap[0];
-  let result = `${last} ${first}`
-  
-  console.log(typeof result)
-  return result;
-}
-
-console.log(swap('Tony Robinson'))
