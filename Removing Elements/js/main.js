@@ -9,11 +9,27 @@ Example:
 
 
 */
+let phrase = ["Keep", "Remove", "Keep", "Remove", "Keep"]
 
-function removeEveryOther(arr){
-    var newArr=[];
-  for (var i = 0; i < arr.length; i+=2){
-    newArr.push(arr[i]);
-    }
-  return newArr;
+function everyOtherElement(arr){
+  let newArr = []
+  for(let i = 0; i < arr.length; i+=2){
+    newArr.push(arr[i])
   }
+  arr = newArr;
+  return arr;
+}
+
+console.log(everyOtherElement(phrase))
+
+function swap(str){
+  let wordSwap = str.split(' ');
+  let last = wordSwap[1];
+  let first = wordSwap[0];
+  let result = `${last} ${first}`
+  
+  console.log(typeof result)
+  return result;
+}
+
+console.log(swap('Tony Robinson'))
