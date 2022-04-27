@@ -1,3 +1,4 @@
+
 /*
 Given a random non-negative number, you have to return the digits 
    of this number within an array in reverse order.
@@ -6,6 +7,6 @@ Given a random non-negative number, you have to return the digits
 0 => [0]  
 */
 
-function reverseOrder(num) {
-    return num.reverse()
-}
+function reverseNum(n) {
+    return String(n).split('').map(Number).reverse()
+  }

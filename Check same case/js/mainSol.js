@@ -1,3 +1,4 @@
+
 /*
 
 Write a function that will check if two given characters are the same case.
@@ -18,11 +19,14 @@ Examples
 
 */
 
-function checkCase(a, b){
-    if((!a.toLowerCase() == !b.toLowerCase()) || (!a.toUpperCase() == !b.toUppperCase()))
-        return -1;
-    if((a.toLowerCase() == b.toLowerCase()) || (a.toUpperCase() == b.toUppperCase()))
-        return 1;
-    else
-        return 0;
+function sameCase(a, b) {
+    if (a.toUpperCase() === a.toLowerCase() || 
+        b.toLowerCase() === b.toUpperCase()
+       ) return -1;
+    if (a === a.toLowerCase() && b === b.toLowerCase() || 
+        a === a.toUpperCase() && b === b.toUpperCase()
+       ) return 1; 
+    else return 0;
 }
+console.log(sameCase('a', 'B'))
+// function 
