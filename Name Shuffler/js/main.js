@@ -6,21 +6,13 @@ Write a function that returns a string in which firstname is swapped with last n
 nameShuffler('john McClane'); => "McClane john"
 
 */
+let testStr = 'john McClane'
 
-function swap(str){
-    let wordSwap = str.split(' ');
-    let last = wordSwap[1];
-    let first = wordSwap[0];
-    let result = `${last} ${first}`
-    
-    console.log(typeof result)
-    return result;
-  }
-  
-  console.log(swap('Tony Robinson'))
+function nameShift(str){
 
-  /* Cleaner way to do this  */
+    let arr = [];
+    arr = str.split(' ').reverse()
+    str = `${arr[0]} ${arr[1]}`
+    return str;
 
-  function nameSuffle(str){
-    return str.split(' ').reverse().join(' ')
-  }
+}
