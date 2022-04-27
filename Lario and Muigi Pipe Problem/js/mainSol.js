@@ -1,3 +1,4 @@
+
 /*
 
 Looks like some hoodlum plumber and his brother has been running around and damaging your stages again.
@@ -15,13 +16,14 @@ Output: 1,2,3,4,5,6,7,8
 */
 
 function pipeFix(numbers){
-    let i = numbers[0];
-    let last = numbers[numbers.length - 1];
-    let arr = [];
-    for(i; i <= last; i++){
-        arr.push(i)
-    }
-    return console.table(arr);
-}
+    let size = numbers[numbers.length - 1]
 
-let testArr = [1,3,5,6,7,8]
+    let fixedPipe = []
+    for(let i = numbers[0]; i <= size; i++){
+        fixedPipe.push(i)
+    }
+    return fixedPipe;
+}
+let nums = [5,7,8,10,12,15]
+
+console.table(pipeFix(nums))
