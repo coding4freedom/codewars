@@ -7,6 +7,7 @@ example:
 */
 
 function solution(str){
-    str = str.split('').reverse().join('');
-    return str;
-}
+    let arr = [];
+    arr = str.split('').reverse();
+    return  str = arr.join('')
+  }
