@@ -1,3 +1,4 @@
+
 /*
 It's pretty straightforward. 
 Your goal is to create a function that removes the first 
@@ -7,7 +8,9 @@ You don't have to worry with strings with less than two characters.
 */
 
 function removeStr(str){
- 
+
 }
 
-console.log(removeStr('happy'))
+function removeChar(str) {
+    return str.slice(1, -1);
+  }

@@ -14,20 +14,20 @@ garbled text and remove all of the numbers. Your program will take in a
 string and clean out all numeric characters, and return a string with spacing 
 and special characters ~#$%^&!@*():;"'.,? all intact.
 */
+let sent = 'all we do is count5 all d6ay 21come here!'
 
-let str = 'This looks5 grea8t!';
 
-function cleanStr(c){
-    let num = '0123456789';
-    let result = '';
 
-    for(let i = 0; i < c.length; i++){
-        if(!num.includes(c.charAt(i))){
-            result += c[i]
+function cleanStr(s){
+    let nums = '0123456789';
+    let result = ''
+
+    for(let i = 0; i < s.length; i++){
+        if(!nums.includes(s.charAt(i))){
+            result += s[i]
         }
     }
-    return console.log(result)
-
+    return console.log(result);
 }
 
-cleanStr(str)
+cleanStr(sent);
