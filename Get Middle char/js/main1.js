@@ -1,3 +1,4 @@
+
 /*
 You are going to be given a word. Your job is to return the 
 middle character of the word. If the word's length is odd, 
@@ -13,12 +14,10 @@ Kata.getMiddle("A") should return "A"
 */
 
 function getMid(s){
-
-    let middle = s.length / 2;
+    let mid = s.length / 2;
 
     return s.length % 2 === 0
-        ? s.slice(Math.floor(middle - 1),Math.floor(middle + 1))
-        : s.charAt(middle)
+        ? s.slice(mid - 1, mid + 1)
+        : s.charAt(Math.floor(mid))
 }
-
 console.log(getMid('supers'))
