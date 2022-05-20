@@ -14,11 +14,14 @@ Output string must be two numbers separated by a single space, and highest numbe
 */
 
 function highLow(num){
-    let result = []
 
-    result = num.split(' ').map(n => parseInt(n)).sort((a, b) => b - a)
-    
-    return console.log(`${Math.max(...result)} ${Math.min(...result)}`)
 }
 
-console.log(highLow("1 2 3 4 5"))
+function highAndLow(numbers){
+    // ...
+    let numArr =[];
+    numArr = numbers.split(' ').map(n => parseInt(n)).sort((a,b) => a - b);
+    return `${numArr[numArr.length - 1]} ${numArr[0]}`
+}  
+
+console.log(highAndLow("1 2 3 4 5"))
