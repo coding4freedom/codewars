@@ -7,20 +7,18 @@ We will consider a, e, i, o, u as vowels for this Kata (but not y).
 The input string will only consist of lower case letters and/or spaces.
 
 */
+let someStr = 'we the people happen to enjoy anime';
 
-function getCount(str) {
-    let count = 0
-    let vowels = ['a', 'e', 'i', 'o', 'u']
+function countVowels(str) {
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    let count = 0;
 
-    str = str.split('').map(s => {
-        if(vowels.includes(s)){
-            count++
-        }
+    Array.from(str).forEach(s => {
+        vowels.includes(s) ? count++: false          
+        
         return count;
     })
-
-
     return console.log(count)
 }
 
-getCount('allcandy')
+countVowels(someStr);
