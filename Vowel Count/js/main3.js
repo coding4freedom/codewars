@@ -9,18 +9,18 @@ The input string will only consist of lower case letters and/or spaces.
 */
 
 function getCount(str) {
-    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    let count = 0
+    let vowels = ['a', 'e', 'i', 'o', 'u']
 
-    let count = 0;
-
-    Array.from(str).map(s =>{
+    str = str.split('').map(s => {
         if(vowels.includes(s)){
             count++
         }
-        return count
+        return count;
     })
 
-    return count
-}   
 
-console.log(getCount('superallknowingfamily'))
+    return console.log(count)
+}
+
+getCount('allcandy')
