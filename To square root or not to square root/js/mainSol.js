@@ -1,3 +1,4 @@
+
 /*
 
 Write a method, that will get an integer array as parameter and will process every number from this array.
@@ -12,5 +13,12 @@ Example
 */
 
 function squareOrSquareRoot(array) {
-
+    return array.map(x => {
+      const n = Math.sqrt(x)
+      return Number.isInteger(n) ? n : x * x
+    })
 }
+
+let newArr = [4,3,9,7,2,1]
+
+console.log(squareOrSquareRoot(newArr))
