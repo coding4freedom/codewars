@@ -1,6 +1,7 @@
 /*
 
-Write a method, that will get an integer array as parameter and will process every number from this array.
+Write a method, that will get an integer array as parameter 
+and will process every number from this array.
 
 Return a new array with processing every number of the input-array like this:
 
@@ -13,4 +14,9 @@ Example
 
 function squareOrSquareRoot(array) {
 
+    let newArr = array.map(n => {
+        return Math.sqrt(n) % 1 === 0 ? Math.sqrt(n) : Math.pow(n, 2)
+    })
+    return newArr;
 }
+console.log(squareOrSquareRoot([4,3,9,7,2,1]))
