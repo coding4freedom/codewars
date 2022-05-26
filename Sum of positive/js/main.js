@@ -1,20 +1,20 @@
-
 /*
 You get an array of numbers, return the sum of all of the positives ones.
 
 Example [1,-4,7,12] => 1 + 7 + 12 = 20
 
 Note: if there is nothing to sum, the sum is default to 0.
-
+ [5, 5, -5, 0, 5, 5, 5, -5]
 */
 
 function pos(arr){
-    let result = arr.reduce((a, b) => {
-        return Math.sign(b) === 1 ? a + b: a + 0;
-    },0)
-    return result;
+    return arr
+        .filter(p => {
+            if(Math.sign(p) === 1){
+                return pos
+            }
+        })
+        .reduce((acc, curr) => acc + curr, 0)
+
 }
-
-let nums = [1,-4,7,12];
-
-console.log(pos(nums));
+console.log(pos([5, 5, -5, 0, 5, 5, 5, -5]))
