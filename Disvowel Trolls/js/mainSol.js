@@ -1,3 +1,4 @@
+
 /*
 Trolls are attacking your comment section!
 
@@ -15,12 +16,13 @@ Note: for this kata y isn't considered a vowel.
 */
 
 function remVowels(str){
-    let vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
- 
-  return str
-    .split('')
-    .filter(vowel => !vowels.includes(vowel))
-    .join('')
 }
 
-console.log(remVowels("This website is for losers LOL!"))
+
+function removeVowels(str){
+    let vowels = 'aeiou';
+
+    return str.split('').filter(s => !vowels.includes(s.toLowerCase())).join('')
+}
+
+console.log(removeVowels("This website is for losers LOL!"))
