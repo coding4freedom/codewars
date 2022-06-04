@@ -12,10 +12,9 @@ XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 XO("zzoo") => false
 */
 function xNo(str){
-    
-    console.log(str.toLowerCase().split('x'))
-    console.log(str.toLowerCase().split('o'))
-    return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length
+
 }
 
-console.log(xNo("ooxXm"))
+function XO(str){
+    return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length
+}
