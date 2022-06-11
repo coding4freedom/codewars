@@ -7,7 +7,10 @@ a new list with the strings filtered out.
 */
 
 function listFilter(l) {
-    return l.filter(num => Number.isInteger(Number.parseInt(num)))
+
 }
 
-console.log(listFilter(['a','k','k','i',1,5,0]))
+function filter_list(l) {
+    
+    return l.filter(Number.isInteger)
+}
