@@ -18,7 +18,12 @@ Examples
 
 */
 function square(n){
-    return Number.isInteger(Math.sqrt(n))? true : false;
+
 }
 
-console.log(square(5))
+let isSquare = function(n){
+  
+    return Number.isInteger(Math.sqrt(n))? true : false; // fix me
+}
+
+console.log(isSquare(24))
