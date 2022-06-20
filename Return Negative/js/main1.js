@@ -10,7 +10,7 @@ makeNegative(0.12); // return -0.12
 */
 
 function makeNeg(num) {
-    return Math.sign(num) ? -(num) : num
+    return Math.sign(num) === 1 ? num = -(num) : num
 }
 
-console.log(makeNeg(0))
+console.log(makeNeg(10))
