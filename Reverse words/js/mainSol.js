@@ -11,7 +11,10 @@ Examples
 
 function revWords(str){
 
-    return str.split('').reverse().join('').split(' ').reverse().join(' ')
 }
 
-console.log(revWords('super name is here'))
+function reverseWords(str) {
+    // Go for it
+    //split words into seperate arrays
+    return str.split("").reverse().join("").split(" ").reverse().join(" ");
+}
