@@ -10,7 +10,8 @@ Examples
 */
 
 function revWords(str){
+
     return str.split('').reverse().join('').split(' ').reverse().join(' ')
 }
 
-console.log(revWords('This is an example'))
+console.log(revWords('super name is here'))
