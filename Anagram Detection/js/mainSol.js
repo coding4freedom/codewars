@@ -15,8 +15,14 @@ Examples
 */
 
 function isAnagram(test, first){
-    let f = first.toLowerCase().split('').sort().join('')
-    let t = test.toLowerCase().split('').sort().join('')
 
-    return f === t ? true : false
 }
+
+function anagram(test, first){
+    let t =  test.toLowerCase().split('').sort().join('');
+    let f =  first.toLowerCase().split('').sort().join('');
+
+    return (t === f)? true: false
+}
+
+console.log(anagram("foefet","toffes"))

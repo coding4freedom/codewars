@@ -9,6 +9,7 @@ makeNegative(0);    // return 0
 makeNegative(0.12); // return -0.12
 */
 
+
 function makeNeg(num) {
     return Math.sign(num) ? -(num) : num
 }
