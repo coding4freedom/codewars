@@ -1,3 +1,4 @@
+
 /*
 Complete the function that accepts a string parameter, 
 and reverses each word in the string. All spaces in 
@@ -12,4 +13,4 @@ function revWords(str){
     return str.split('').reverse().join('').split(' ').reverse().join(' ')
 }
 
-console.log(revWords("This is an example!"))
+console.log(revWords('This is an example'))
