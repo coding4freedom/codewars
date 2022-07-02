@@ -1,3 +1,4 @@
+
 /*
 An isogram is a word that has no repeating letters, 
 consecutive or non-consecutive. Implement a function that 
@@ -13,8 +14,5 @@ Example: (Input --> Output)
 */
 
 function isIso(str){
-    str =  str.toLowerCase()
-    return !str || str.length === new Set(str).size
+    return !str || (str.length === new Set(str.toLowerCase()).size)
 }
-
-console.log(isIso("Dermatoglyphics"))
