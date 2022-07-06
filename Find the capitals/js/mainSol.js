@@ -1,3 +1,4 @@
+
 /*
 Write a function that takes a single string (word) 
 as argument. The function must return an ordered list 
@@ -8,14 +9,20 @@ Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
 */
 
 function caps (word){
-    let arr = []
 
-    for(let i = 0; i < word.length; i++){
-        if(word[i] === word[i].toUpperCase()){
-            arr.push(i)
-        }
-    }
-    return arr;
 }
 
-console.log(caps('CodEWaRs'))
+
+let capitals = function (word) {
+    // Write your code here
+    var arr = []
+    for(i = 0; i < word.length; i++){
+      if (word[i] === word[i].toUpperCase()){
+        arr.push(i)
+      }
+      
+    }
+    return arr
+};
+
+console.log(capitals('CodEWaRs'))
