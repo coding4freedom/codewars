@@ -1,4 +1,3 @@
-
 /*
 Write a function that takes a single string (word) 
 as argument. The function must return an ordered list 
@@ -16,7 +15,7 @@ function caps (word){
             arr.push(i)
         }
     }
-
     return arr;
 }
-console.log(caps('AppLe'))
+
+console.log(caps('CodEWaRs'))
