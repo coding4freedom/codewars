@@ -34,16 +34,14 @@ printer_error(s) => "8/22"
 
 function printError(s){
 
-    let bottom = s.length
-    let error = 0
-    // let result = `${error}/${bottom}`
-    let alpha = 'abcdefghijklm'
-    
-    for(let i = 0; i < s.length; i++){
-        if(!alpha.includes(s[i])){
-            error++
-        }
-    }
-    return `${error}/${bottom}`
 }
-console.log(printError("aaaxbbbbyyhwawiwjjjwwm"))
+
+function printerError(s) {
+    // your code
+  let alpha = 'abcdefghijklm';
+  let count = 0;
+  let errors = s.split('').map(char => !alpha.includes(char) ? count++: count)
+  return `${count}/${s.length}`
+}
+
+console.log(printerError('aaaxbbbbyyhwawiwjjjwwm'))
