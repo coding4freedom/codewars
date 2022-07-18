@@ -9,6 +9,7 @@ Examples
 */
 
 function revWords(str){
-    return str.split('').reverse().join("").split(' ').reverse().join(" ")
+    return str.split('').reverse().join('').split(' ').reverse().join(' ')
 }
+
 console.log(revWords("This is an example!"))
