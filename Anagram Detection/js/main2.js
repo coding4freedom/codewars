@@ -15,7 +15,9 @@ Examples
 */
 
 function isAnagram(test, first){
-    return test.toLowerCase().split("").sort().join("") === first.toLowerCase().split("").sort().join("") ? true : false
+    let t = test.toLowerCase()
+    let f = first.toLowerCase()
+    return t.split('').sort().join('') === f.split('').sort().join('') ? true : false
 }
 
-console.log(isAnagram("foefet","toffes"))
+console.log(isAnagram("Bucketheas", "DeathCubeK"))
