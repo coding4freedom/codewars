@@ -11,10 +11,12 @@ The input will be a lowercase string with no spaces.
 */
 
 function altCaps(s){
+
+}
+
+function capitalize(s){
     let even = s.split('').map((s, index) => index % 2 === 0? s.toUpperCase(): s).join('')
     let odd =  s.split('').map((s, index) => index % 2 === 0? s: s.toUpperCase()).join('')
     
     return [even, odd];
-}
-
-console.log(altCaps("abcdef"))
+};
