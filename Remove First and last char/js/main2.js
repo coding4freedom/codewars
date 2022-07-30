@@ -1,3 +1,4 @@
+
 /*
 It's pretty straightforward. 
 Your goal is to create a function that removes the first 
@@ -7,12 +8,6 @@ You don't have to worry with strings with less than two characters.
 */
 
 function removeStr(str){
-    let arr = [...str]
-    arr.shift()
-    arr.pop()
-    
-   
-    return arr.join('')
+    return str.slice(1, -1)
 }
-
 console.log(removeStr('the world'))
