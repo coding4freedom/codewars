@@ -1,4 +1,3 @@
-
 /*
 
 Write a method, that will get an integer array as parameter 
@@ -12,9 +11,12 @@ Example
 [4,3,9,7,2,1] -> [2,9,3,49,4,1]
 
 */
-function squareOrRoot(array){
-    let final = array.map(num => Number.isInteger(Math.sqrt(num))  ? Math.sqrt(num) : num * num )
-    return final
-}
 
-console.log(squareOrRoot([4,3,9,7,2,1]))
+function squareOrSquareRoot(array) {
+
+    let newArr = array.map(n => {
+        return Math.sqrt(n) % 1 === 0 ? Math.sqrt(n) : Math.pow(n, 2)
+    })
+    return newArr;
+}
+console.log(squareOrSquareRoot([4,3,9,7,2,1]))
