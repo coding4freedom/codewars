@@ -16,7 +16,7 @@ function greet(name){
 var greet = function(name) {  
   
   
-    let newName = name.split('').map((n, index) => {
+    let newName = name.toLowerCase().split('').map((n, index) => {
       return index === 0 ? n.toUpperCase(): n
     }).join('')
     
