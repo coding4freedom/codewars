@@ -16,7 +16,10 @@ friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 */
 
 function removeFoe(friends){
-    return friends.filter(names => names.length === 4 )
+
 }
 
-console.log(removeFoe(["Ryan", "Kieran", "Jason", "Yous"]))
+function friend(friends){
+    //your code here
+    return friends.filter(f => f.length === 4)
+  }
