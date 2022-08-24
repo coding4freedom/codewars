@@ -10,17 +10,7 @@ Example:
 
 */
 function greet(name){
-    
+    return `Hello ${name.slice(0,1).toUpperCase()}${name.slice(1).toLowerCase()}`
 }
 
-var greet = function(name) {  
-  
-  
-    let newName = name.toLowerCase().split('').map((n, index) => {
-      return index === 0 ? n.toUpperCase(): n
-    }).join('')
-    
-    let greeting = `Hello ${newName}!`
-    
-    return greeting;
-};
+console.log(greet('riley'))
