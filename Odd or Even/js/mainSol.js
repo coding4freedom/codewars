@@ -19,9 +19,18 @@ Output: "even"
 */
 
 function evenOrOdd(arr){
-    let sum = arr.reduce((acc, curr) => acc + curr, 0)
-    return sum % 2 === 0 ? "even" : "odd"
 
 }
 
-console.log(evenOrOdd([0]))
+function oddOrEven(array) {
+    //enter code here
+   let sum = array.reduce((acc, cur) => acc + cur, 0)
+   let result;
+   if(sum === 0 || sum % 2 === 0){
+     return result = 'even'
+   }else{
+     return result = 'odd'
+   } 
+}
+
+console.log(oddOrEven([0]))
