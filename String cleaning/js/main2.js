@@ -17,8 +17,15 @@ and special characters ~#$%^&!@*():;"'.,? all intact.
 let sent = 'all we do is count5 all d6ay 21come here!'
 
 function cleanStr(str){
-    
-    return str.split('').filter(s => isNaN(s)).join('')
+    let num = '0123456789';
+    let finalStr = '';
+
+    for(let i = 0; i < str.length; i++){
+        if(!num.includes(str.charAt(i))){
+            finalStr += str[i];
+        }        
+    }
+    return console.log(finalStr);
 }
 
-console.log(cleanStr(sent))
+cleanStr(sent)
