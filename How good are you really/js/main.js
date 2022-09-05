@@ -15,3 +15,18 @@ Your points are not included in the array of your class's points.
 For calculating the average point you may add your point to the given array!
 
 */
+
+function betterThan(classPoints, yourPoints){
+
+    let sum = 0;
+
+    classPoints.push(yourPoints)
+    let total = classPoints.reduce((acc, cur) => acc + cur, 0)
+
+    sum = total;
+    sum = sum / classPoints.length
+    console.log(sum)
+    return yourPoints > sum ? true : false
+}
+
+console.log(betterThan([85,72,91,80,88], 92))
