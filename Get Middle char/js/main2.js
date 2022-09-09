@@ -13,9 +13,12 @@ Kata.getMiddle("A") should return "A"
 */
 
 function getMid(s){
-    return s.length % 2 === 0 ?
-        `${s.slice((s.length / 2) - 1, (s.length / 2) + 1 )}` :
-        `${s.charAt(s.length / 2)}` 
+
+    let middle = s.length / 2;
+
+    return s.length % 2 === 0
+        ? s.slice(Math.floor(middle - 1),Math.floor(middle + 1))
+        : s.charAt(middle)
 }
 
-console.log(getMid("middle"))
+console.log(getMid('supers'))
