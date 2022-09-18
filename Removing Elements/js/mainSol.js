@@ -10,6 +10,10 @@ Example:
 
 */
 
+function removeOther(arr){
+  
+}
+
 function removeEveryOther(arr){
     var newArr=[];
   for (var i = 0; i < arr.length; i+=2){

@@ -9,14 +9,16 @@ Example:
 
 
 */
+let phrase = ["Keep", "Remove", "Keep", "Remove", "Keep"]
 
-function removeOther(arr){
-    let newArr = []
-  for(let i =0; i < arr.length; i+=2){
+function everyOtherElement(arr){
+  let newArr = []
+  for(let i = 0; i < arr.length; i+=2){
     newArr.push(arr[i])
   }
-
-  return newArr
+  arr = newArr;
+  return arr;
 }
 
-console.log(removeOther(["Keep", "Remove", "Keep", "Remove", "Keep"]))
+console.log(everyOtherElement(phrase))
+
