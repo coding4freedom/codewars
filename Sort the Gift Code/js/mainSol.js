@@ -1,3 +1,4 @@
+
 /*
 Santa asked his organizer to order the characters in 
 alphabetical order, but the Elf fell asleep from consuming 
@@ -13,7 +14,12 @@ Examples (Input -- => Output):
 */
 
 function sortGift(code){
-    return code.split('').sort().join("")
+    
 }
 
-console.log(sortGift("zyxwvutsrqponmlkjihgfedcba"))
+function sortGiftCode(code){   
+    let c = code.split('').sort().join('')
+    
+    return String(c)
+}
+
