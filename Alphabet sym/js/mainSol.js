@@ -14,12 +14,17 @@ See test cases for more examples.
 
 Input will consist of alphabet characters, both uppercase and lowercase. No spaces.
 
+"abcdefghijklmnopqrstuvwxyz"
+
 */
 
 function sol(arr){
-    let alph = 'abcdefghijklmnopqrstuvwxzy'
 
-    return arr.map(x => x.toLowerCase().split('').filter((a, b) => b==alph.indexOf(a)).length)
 }
 
-console.log(sol(["abode","ABc","xyzD"]))
+function solve(arr){  
+    let alphabeth = "abcdefghijklmnopqrstuvwxyz";
+    return arr.map(x => x.toLowerCase().split('').filter((y,i) => i==alphabeth.indexOf(y)).length);
+};
+
+console.log(solve(["abode","ABc","xyzD"]))
