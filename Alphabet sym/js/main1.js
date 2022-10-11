@@ -18,9 +18,9 @@ Input will consist of alphabet characters, both uppercase and lowercase. No spac
 */
 
 function sol(arr){
-    let alpha = "abcdefghijklmnopqrstuvwxyz"
+    let alph = 'abcdefghijklmnopqrstuvwxzy'
 
-    return arr.map( x => x.toLowerCase().split('').filter((a,b) => b==alpha.indexOf(a)).length)
+    return arr.map(x => x.toLowerCase().split('').filter((a, b) => b==alph.indexOf(a)).length)
 }
 
 console.log(sol(["abode","ABc","xyzD"]))
