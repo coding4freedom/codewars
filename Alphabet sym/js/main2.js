@@ -15,12 +15,12 @@ See test cases for more examples.
 Input will consist of alphabet characters, both uppercase and lowercase. No spaces.
 
 "abcdefghijklmnopqrstuvwxyz"
-
 */
 
 function sol(arr){
     let alpha = "abcdefghijklmnopqrstuvwxyz"
-    return arr.map(x => x.toLowerCase().split('').filter((a,b) => b==alpha.indexOf(a)).length)
+
+    return arr.map( x => x.toLowerCase().split('').filter((a,b) => b==alpha.indexOf(a)).length)
 }
 
 console.log(sol(["abode","ABc","xyzD"]))
