@@ -10,8 +10,7 @@ Example:
 */
 
 function swap(x){
-    return x.split('').map( ch => ch == "c" ? ch = 'c' : ch == 'a' ? ch = 'b': 'a').join('')
+    return x.split('').map(a => a === 'c'? a = 'c' : a === 'a'? a = 'b' : a = 'a').join('')
 }
 
-
-console.log(swap('aabacbaa'))
+console.log(swap('acb'))
