@@ -8,3 +8,14 @@ For example, if the parameters passed are (2, 6), the function should return [2,
 
 If you can, try writing it in only one line of code.
 */
+
+function mult(n1,n2){
+    let final = []
+
+    for(let i = n1; i <= n2; i+=n1){
+        final.push(i)        
+    }
+    return final;
+}
+
+console.log(mult(2,6))
