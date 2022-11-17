@@ -16,9 +16,9 @@ and special characters ~#$%^&!@*():;"'.,? all intact.
 */
 let sent = 'all we do is count5 all d6ay 21come here!'
 
-function cleanStr(str){
-    
-    return str.split('').filter(s => isNaN(s)).join('')
+function cleanS(s){    
+
+    return s.split('').filter(i => isNaN(i)).join('')
 }
 
-console.log(cleanStr(sent))
+console.log(cleanS(sent))
