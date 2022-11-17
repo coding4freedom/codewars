@@ -11,7 +11,12 @@ Example:
 */
 
 function removeOther(arr){
-  return arr.filter((a, index) => index%2 - 1)
+    let newArr = []
+  for(let i =0; i < arr.length; i+=2){
+    newArr.push(arr[i])
+  }
+
+  return newArr
 }
 
 console.log(removeOther(["Keep", "Remove", "Keep", "Remove", "Keep"]))
