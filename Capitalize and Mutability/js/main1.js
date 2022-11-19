@@ -11,8 +11,3 @@ The string lengths will be from 1 character up to 10 characters, but will never 
 
 */
 
-function capWord(word){
-    return word.replace(word.charAt(0), word.charAt(0).toUpperCase())
-}
-
-console.log(capWord("happy"))

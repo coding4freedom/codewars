@@ -12,6 +12,10 @@ The string lengths will be from 1 character up to 10 characters, but will never 
 
 */
 
+function capWord(word){
+
+}
+
 function capitalizeWord(word) {
   
     let result = word.charAt(0).toUpperCase() + word.slice(1);
