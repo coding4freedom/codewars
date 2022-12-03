@@ -7,6 +7,11 @@ nameShuffler('john McClane'); => "McClane john"
 
 */
 
+function swapC(str){
+  
+}
+
+
 function swap(str){
     let wordSwap = str.split(' ');
     let last = wordSwap[1];
