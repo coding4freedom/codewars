@@ -14,15 +14,14 @@ Output: 1,2,3,4,5,6,7,8
 
 */
 
-function pipeF(numbers){
-    let stop = numbers[numbers.length - 1]
-
-    let final = []
-    for(let i = numbers[0]; i <= stop; i++){
-        final.push(i)
+function pipeFix(numbers){
+    let i = numbers[0];
+    let last = numbers[numbers.length - 1];
+    let arr = [];
+    for(i; i <= last; i++){
+        arr.push(i)
     }
-
-    return final
+    return console.table(arr);
 }
 
-console.log(pipeF([1,3,5,6,7,8]))
+let testArr = [1,3,5,6,7,8]
