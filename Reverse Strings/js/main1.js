@@ -6,8 +6,7 @@ example:
 
 */
 
-function sol(str){
-  return str.split('').reverse().join('')
+function solution(str){
+    str = str.split('').reverse().join('');
+    return str;
 }
-
-console.log(sol('world'))

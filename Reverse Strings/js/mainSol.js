@@ -6,6 +6,10 @@ example:
 
 */
 
+function sol(str){
+  
+}
+
 function solution(str){
     let arr = [];
     arr = str.split('').reverse();
