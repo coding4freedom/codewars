@@ -7,7 +7,10 @@ repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
 */
 
 function repeatS (n, s) {
-    return s.repeat(n)
+    let newS = '';
+    for(let i = 1; i <= n; i++){
+        newS += s;
+    }
+    return newS; 
 }
-
-console.log(repeatS(6, "Men"))
+console.log(repeatS(6, 'Super'))
