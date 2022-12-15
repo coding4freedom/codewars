@@ -15,9 +15,12 @@ Note: for this kata y isn't considered a vowel.
 */
 
 function remVowels(str){
-    let vow = ['a', 'e', 'i', 'o', 'u' ]
-
-    return str.split('').filter(s => !vow.includes(s)).join('')
+    let vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
+ 
+  return str
+    .split('')
+    .filter(vowel => !vowels.includes(vowel))
+    .join('')
 }
 
-console.log(remVowels('considered'))
+console.log(remVowels("This website is for losers LOL!"))
