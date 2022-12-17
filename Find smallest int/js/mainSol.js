@@ -1,3 +1,4 @@
+
 /*
 Given an array of integers your solution should find the 
 smallest integer.
@@ -14,7 +15,11 @@ supplied array will not be empty.
 */
 
 function findStInt(arr){
-    return Math.min(...arr)
+
+    
 }
 
-console.log(findStInt([34, -345, -1, 100]))
+
+function findSmallestInt(args) {
+      return Math.min(...args)
+}
