@@ -10,9 +10,12 @@ Note: The function accepts an integer and returns an integer
 */
 
 function square(num){
-  
-   
-  return [...String(num)].map( n => Math.pow(n, 2)).join('')
+  return num
+  .toString()
+  .split('')
+  .map(n => parseInt(n))
+  .map(n => n**2)
+  .join('')
 }
 
 console.log(square(9119))
