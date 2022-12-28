@@ -13,7 +13,9 @@ XO("zzoo") => false
 */
 function xNo(str){
     
-    return str.toLowerCase().split('o').length === str.toLowerCase().split('x').length
+    console.log(str.toLowerCase().split('x'))
+    console.log(str.toLowerCase().split('o'))
+    return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length
 }
 
-console.log(xNo("ooxx"))
+console.log(xNo("ooxXm"))
