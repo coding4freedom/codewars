@@ -10,7 +10,7 @@ Example:
 
 */
 function greet(name){
-    return `Hello ${name.charAt(0).toUpperCase()}${name.substring(1)}!`
+    return `Hello ${name.slice(0,1).toUpperCase()}${name.slice(1).toLowerCase()}`
 }
 
-console.log(greet('Mandy'))
+console.log(greet('riley'))
