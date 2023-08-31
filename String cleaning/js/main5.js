@@ -1,4 +1,3 @@
-
 /*
 Your boss decided to save money by purchasing some cut-rate optical 
 character recognition software for scanning in the text of old novels 
@@ -18,8 +17,15 @@ and special characters ~#$%^&!@*():;"'.,? all intact.
 let sent = 'all we do is count5 all d6ay 21come here!'
 
 function cleanS(s){
-    let num = ['0','1','2','3','4','5','6','7','8','9']
-    return Array.from(sent).filter((i, index) => !num.includes(i)).join(" ")
+    let n = '0123456789';
+    let result = '';
+
+    for (let i = 0; i < s.length; i++) {
+        if(!n.includes(s.charAt(i))){
+            result += s[i];
+        }       
+    }
+    return result;
 }
 
 console.log(cleanS(sent))
