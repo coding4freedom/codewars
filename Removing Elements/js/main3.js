@@ -1,4 +1,3 @@
-
 /*
 Take an array and remove every second element from the array. 
 Always keep the first element and start removing with the next element.
@@ -11,9 +10,8 @@ Example:
 
 */
 
-let samp = ["Keep", "Remove", "Keep", "Remove", "Keep"]
 function removeOther(arr){
-  return  arr.filter((val, index) => index % 2 == 0)
+  return arr.filter((a, index) => index%2 - 1)
 }
 
-console.log(removeOther(samp))
+console.log(removeOther(["Keep", "Remove", "Keep", "Remove", "Keep"]))
