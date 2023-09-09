@@ -1,4 +1,3 @@
-
 /*
 Your coworker was supposed to write a simple helper function to capitalize a string 
 (that contains a single word) before they went on vacation.
@@ -11,10 +10,9 @@ Don't worry about numbers, special characters, or non-string types being passed 
 The string lengths will be from 1 character up to 10 characters, but will never be empty.
 
 */
-let w = 'finally'
 
 function capWord(word){
-    return word[0].toUpperCase() + word.slice(1)
+    return word.replace(word.charAt(0), word.charAt(0).toUpperCase())
 }
 
-console.log(capWord(w))
+console.log(capWord("happy"))

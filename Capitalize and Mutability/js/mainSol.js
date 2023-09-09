@@ -12,6 +12,8 @@ The string lengths will be from 1 character up to 10 characters, but will never 
 
 */
 
+let w = 'finally'
+
 function capWord(word){
 
 }
