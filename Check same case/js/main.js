@@ -18,11 +18,15 @@ Examples
 
 */
 
-function checkCase(a, b){
-    if((!a.toLowerCase() == !b.toLowerCase()) || (!a.toUpperCase() == !b.toUppperCase()))
-        return -1;
-    if((a.toLowerCase() == b.toLowerCase()) || (a.toUpperCase() == b.toUppperCase()))
-        return 1;
-    else
-        return 0;
+function sameCas(a,b){
+    if (a.match(a | /[^a-zA-Z]/)  || b.match(a | /[^a-zA-Z]/)){
+        return -1
+    }
+    else if (a == a.toUpperCase() && b == b.toUpperCase() || a == a.toLowerCase() && b == b.toLowerCase()){
+        return 1
+    } else if (a == a.toLowerCase() && b == b.toUpperCase() || a == a.toUpperCase() && b == b.toLowerCase()) {
+        return 0
+    } 
 }
+
+console.log(sameCas('0','?'))
