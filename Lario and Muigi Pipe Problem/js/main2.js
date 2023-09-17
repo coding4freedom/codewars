@@ -15,12 +15,14 @@ Output: 1,2,3,4,5,6,7,8
 */
 
 function pipeF(numbers){
-    let num = []
-    for(let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
-      num.push(i) 
-        
+    let stop = numbers[numbers.length - 1]
+
+    let final = []
+    for(let i = numbers[0]; i <= stop; i++){
+        final.push(i)
     }
-    return num
+
+    return final
 }
 
 console.log(pipeF([1,3,5,6,7,8]))
