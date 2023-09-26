@@ -7,6 +7,11 @@ Given a random non-negative number, you have to return the digits
 0 => [0]  
 */
 
+
+function revNum(n){
+
+}
+
 function reverseNum(n) {
     return String(n).split('').map(Number).reverse()
   }

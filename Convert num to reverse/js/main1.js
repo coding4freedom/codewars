@@ -1,4 +1,3 @@
-
 /*
 Given a random non-negative number, you have to return the digits 
    of this number within an array in reverse order.
@@ -7,9 +6,6 @@ Given a random non-negative number, you have to return the digits
 0 => [0]  
 */
 
-
-function revNum(n){
-    return String(n).split('').map(x => parseInt(x)).reverse()
+function reverseOrder(num) {
+    return num.reverse()
 }
-
-console.log(revNum(348597))
