@@ -8,7 +8,7 @@ Note: if there is nothing to sum, the sum is default to 0.
 */
 
 function pos(arr){
-    return arr.filter((x) => x > 0).reduce((prev, curr) => curr + prev , 0)
+    return arr.reduce((a, b) => b > 0 ? b + a : a, 0)
 }
 
 console.log(pos([1,-4,7,12]))
