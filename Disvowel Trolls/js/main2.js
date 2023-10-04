@@ -12,13 +12,12 @@ become "Ths wbst s fr lsrs LL!".
 
 Note: for this kata y isn't considered a vowel.
 
-let vowels = 'aeiou';
 */
 
 function remVowels(str){
-    let vowels = 'aeiou';
+    let vow = ['a', 'e', 'i', 'o', 'u' ]
 
-    return str.split('').filter(x => !vowels.includes(x.toLowerCase())).join('')
+    return str.split('').filter(s => !vow.includes(s)).join('')
 }
 
-console.log(remVowels("This website is for losers LOL!"))
+console.log(remVowels('considered'))
