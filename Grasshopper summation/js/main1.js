@@ -13,11 +13,12 @@ summation(8) -> 36
 */
 
 function sums(num){
-    let final = 0;
+    
+    let final = 0
     for(let i = 1; i <= num; i++){
-        final += i         
-    }    
-    return final;
+        final += i
+    }
+    return final
 }
 
 console.log(sums(8))
