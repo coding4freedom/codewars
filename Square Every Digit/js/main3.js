@@ -1,4 +1,3 @@
-
 /*
 Welcome. In this kata, you are asked to square every 
 digit of a number and concatenate them.
@@ -11,7 +10,9 @@ Note: The function accepts an integer and returns an integer
 */
 
 function square(num){
-  return num.toString().split('').map(x => parseInt(x)).map(x => x * x).join("")
+  
+   
+  return [...String(num)].map( n => Math.pow(n, 2)).join('')
 }
 
 console.log(square(9119))
