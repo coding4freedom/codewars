@@ -13,7 +13,7 @@ Kata.getMiddle("A") should return "A"
 */
 
 function getMid(s){
-    return s.length % 2 == 0 ? `${s.charAt(s.length / 2 - 1)}${s.charAt(s.length / 2)}` : s.charAt(s.length / 2) 
+    return s.length % 2 === 0 ? `${s.slice((s.length / 2) - 1, (s.length / 2 ) + 1)}` : `${s.charAt(s.length / 2)}`
 }
 
-console.log(getMid("middle"))
+console.log(getMid("test"))
