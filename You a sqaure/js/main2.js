@@ -1,5 +1,5 @@
 /*
-Given an integral number, determine if it's a square number:
+iven an integral number, determine if it's a square number:
 
 In mathematics, a square number or perfect square is an integer 
 that is the square of an integer; in other words, it is the product 
@@ -18,12 +18,7 @@ Examples
 
 */
 function square(n){
-
+    return Number.isInteger(Math.sqrt(n))
 }
 
-let isSquare = function(n){
-  
-    return Number.isInteger(Math.sqrt(n))? true : false; // fix me
-}
-
-console.log(isSquare(24))
+console.log(square(3))
