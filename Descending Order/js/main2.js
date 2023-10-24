@@ -9,7 +9,7 @@ Input: 42145 Output: 54421
 */
 
 function descendOrder(n){
-    return String(n).split('').sort((a,b) => b - a).map(x => parseInt(x)).join('')
+    return n.toString().split('').sort((a,b) => b - a).join('')
 }
 
 console.log(descendOrder(42145))
