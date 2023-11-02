@@ -9,8 +9,7 @@ The parameter of accum is a string which includes only letters from a..z and A..
 */
 
 function acm(s){
-    return s.split('').map((x, index) => index == 0 ? x.toUpperCase(): `${x.toUpperCase()}${x.repeat(index)}`).join('-')
+    return s.split('').map((a, ind) => ind === 0 ? a.toUpperCase() :a.toUpperCase()+ `${a.toLowerCase().repeat(ind)}`).join('-')
 }
 
-console.log(acm("abcd"))
-
+console.log(acm("RqaEzty"))
