@@ -11,11 +11,9 @@ XO("ooxXm") => true
 XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 XO("zzoo") => false
 */
-function xNo(str){    
-    let x = str.split('').reduce((acc, curr) => curr.includes('x') ? acc= acc + 1 : acc, 0)
-    let o = str.split('').reduce((acc, curr) => curr.includes('o') ? acc = acc + 1 : acc, 0)
+function xNo(str){
     
-    return x == o ? true : false
+    return str.toLowerCase().split('o').length === str.toLowerCase().split('x').length
 }
 
-console.log(xNo("zpzpzpp"))
+console.log(xNo("ooxx"))
