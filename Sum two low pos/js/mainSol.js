@@ -1,3 +1,4 @@
+
 /*
 
 Create a function that returns the sum of the two lowest 
@@ -11,8 +12,12 @@ For example, when an array is passed like
 */
 
 function sumTwoLow(num){
-    let two = num.sort((a,b) => a - b)
-    return two[0] + two[1]
+
 }
 
-console.log(sumTwoLow([19, 5, 42, 2, 77]))
+function sumTwoSmallestNumbers(numbers) {  
+    //Code here
+    let newNum = numbers.sort((a,b) => a - b)
+    return newNum[0] + newNum[1]
+}
+console.log(sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453]))
