@@ -1,3 +1,4 @@
+
 /*
 Given two integers a and b, which can be positive or 
 negative, find the sum of all the integers between 
@@ -17,5 +18,9 @@ Examples (a, b) --> output (explanation)
 */
 
 function getSum(a,b){
-    
+    let min = Math.min(a,b);
+    let max = Math.max(a,b);
+    return (max - min + 1) * (min +  max) / 2;
 }
+
+console.log(getSum(1, 1))
