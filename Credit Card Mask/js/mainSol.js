@@ -12,6 +12,8 @@ Examples (input --> output):
 // "What was the name of your first pet?"
 "Skippy" --> "##ippy"
 
+found a simpler solution 
+return cc.slice(-4).padStart(cc.length,'#')
 */
 
 function maskify(cc) {
