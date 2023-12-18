@@ -15,7 +15,6 @@ this triangle (starting at index 1) e.g.: (Input --> Output)
 
 */
 function sumOfOdds(n){
-    return Math.pow(n,3)
+    return Math.pow(n, 3)
 }
-
-console.log(sumOfOdds(9))
+console.log(sumOfOdds(4))
